@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'jobs/index'
+  resources :jobs
+  root 'jobs#index'
+  #get 'jobs/index'
 
-  get 'jobs/new'
+  #get 'jobs/new'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
